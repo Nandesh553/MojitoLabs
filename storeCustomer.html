@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Choose</title>
+<style media="screen" type="text/css">
+h1 {
+    color: #4CAF50;
+}
+
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<form action="storeCustomer.php" method="post">
+C ID  
+<input type="text" name="cId">
+<br>
+Customer Email
+<input type="text" name="cEmail">
+<br>
+Customer Password
+<input type="text" name="cPassword">
+<br>
+Customer Name
+<input type="text" name="cName">
+<br>
+Customer Contact
+<input type="text" name="cContact">
+<br>
+Customer Address
+<input type="text" name="cAddress">
+<br>
+Customer City
+<input type="text" name="cCity">
+<br>
+Customer State
+<input type="text" name="cState">
+<br>
+Customer Order
+<input type="text" name="cOrder">
+<br>
+  <input type="submit" name="button" value="Order" id="order">
+</form>
+
+</body>
+</html>
+customerId int(11) PK 
+customerEmail varchar(50) 
+customerPassword varchar(50) 
+customerName varchar(50) 
+customerContact int(11) 
+customerAddress varchar(50) 
+customerCity varchar(50) 
+customerState varchar(50) 
+customerOrder varchar(50)
