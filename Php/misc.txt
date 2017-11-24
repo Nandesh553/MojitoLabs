@@ -1,0 +1,10 @@
+INSERT INTO `mydb`.`getOrder` (`Order_id`, `Customer_id`, `Product_id`, `Order_item`, `Order_quantity`, `Order_history`, `Order_amount`, `Order_shipname`, `Order_shipaddress`, `Order_state`, `Order_phone`, `Order_trackingno`, `Order_price`, `Order_discount`, `Order_total`, `Order_shipdate`, `Order_quantity_copy1`) VALUES ('301', '201', '401', 'order1', '45', 'check23', '4999', 'name1', 'qwert-5567', 'state1', '90909090', '898989', '676767', '7878', '678678', '2017-01-23', '67')
+INSERT INTO `mydb`.`getOrder` (`Order_id`, `Customer_id`, `Product_id`, `Order_item`, `Order_quantity`, `Order_history`, `Order_amount`, `Order_shipname`, `Order_shipaddress`, `Order_state`, `Order_phone`, `Order_trackingno`, `Order_price`, `Order_discount`, `Order_total`, `Order_shipdate`, `Order_quantity_copy1`) VALUES ('302', '202', '402', 'order2', '23', 'check45', '55656', 'name2', 'qwert5676', 'state2', '78787889', '78666', '567889', '2343', '12345', '2018-02-27', '34')
+INSERT INTO `mydb`.`getOrder` (`Order_id`, `Customer_id`, `Product_id`, `Order_item`, `Order_quantity`, `Order_history`, `Order_amount`, `Order_shipname`, `Order_shipaddress`, `Order_state`, `Order_phone`, `Order_trackingno`, `Order_price`, `Order_discount`, `Order_total`, `Order_shipdate`, `Order_quantity_copy1`) VALUES ('303', '203', '403', 'order3', '56', 'check67', '5678', 'name3', 'qwert56789', 'state3', '1234567', '3456', '5678', '567', '58729', '2017-01-12', '43')
+
+CREATE TABLE `mydb`.`getProductDetails` (
+productId INT NOT NULL PRIMARY KEY,
+productName VARCHAR(50),
+productPrice INT(10),
+productDiscountPrice INT(10)
+);
