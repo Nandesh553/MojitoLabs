@@ -9,19 +9,28 @@
 //storing it into array.
 	$sdata = json_decode($jsondata,true);
 
-//echo $sdata;
-
-	$name = $sdata[0]['name'];
-	$mob = $sdata[0]['mob'];
+print_r($sdata);
+	
 	$email = $sdata[0]['email'];
+    $mob = $sdata[0]['mob'];
+    $weight = $sdata[0]['weight'];
+    $height = $sdata[0]['height'];
+    $dob = $sdata[0]['dob'];
+    $bloodGroup = $sdata[0]['bloodGroup'];
 	$password = $sdata[0]['password'];
 	
-	$sql= "insert into `users` (name,mob,email,password) values 
-	('$name','$mob','$email','$password')";
+	$sql= "insert into `users` (email,mob,weight,height,dob,bloodGroup,password) values 
+	('$email','$mob','$weight','$height','$dob','$bloodGroup','$password')";
 
-
-	$result=mysqli_query($conn,$sql);
+if($conn->query($sql) === TRUE){
+	echo "Successfully updated";
+}
+else{echo "Code is rubbish.".$sql."<br>".$conn->error;}
+echo "<br>";
+$conn->close();
+	/*$result=mysqli_query($conn,$sql);
 
 	echo "update successfull";
 $conn->close();
+*/
 ?>
