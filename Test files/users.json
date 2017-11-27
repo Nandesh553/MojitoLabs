@@ -1,16 +1,8 @@
 [
     {
-        "userId": "1",
         "name": "name1",
-        "phoneNo": "1111",
+        "mob": "1111",
         "email": "email1",
         "password": "pass1"
-    },
-	{
-        "userId": "2",
-        "name": "name2",
-        "phoneNo": "2222",
-        "email": "email2",
-        "password": "pass2"
-    }
+    }   
 ]

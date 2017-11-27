@@ -10,23 +10,18 @@
 	$sdata = json_decode($jsondata,true);
 
 //echo $sdata;
-//print_r($sdata);
-for($x=0;$x<count($sdata);$x++)
-{
-	$userId = $sdata[$x]['userId'];
-	$name = $sdata[$x]['name'];
-	$phoneNo = $sdata[$x]['phoneNo'];
-	$email = $sdata[$x]['email'];
-	$password = $sdata[$x]['password'];
-	//echo $cId;
+
+	$name = $sdata[0]['name'];
+	$mob = $sdata[0]['mob'];
+	$email = $sdata[0]['email'];
+	$password = $sdata[0]['password'];
 	
-	$sql= "insert into `users` (name,phoneNo,email,password) values 
-	('$name','$phoneNo','$email','$password')";
+	$sql= "insert into `users` (name,mob,email,password) values 
+	('$name','$mob','$email','$password')";
 
 
 	$result=mysqli_query($conn,$sql);
 
 	echo "update successfull";
-}
 $conn->close();
 ?>
