@@ -3,30 +3,31 @@
 <?php
 	header('Content-type: application/json;');
 //read the json file contents
-    $jsondata = file_get_contents("users.json");	
+    $jsondata = file_get_contents("register.json");	
 //echo $jsondata;
 	
 //storing it into array.
 	$sdata = json_decode($jsondata,true);
 
-//echo $sdata;
 //print_r($sdata);
-for($x=0;$x<count($sdata);$x++)
-{
-	$userId = $sdata[$x]['userId'];
-	$name = $sdata[$x]['name'];
-	$phoneNo = $sdata[$x]['phoneNo'];
-	$email = $sdata[$x]['email'];
-	$password = $sdata[$x]['password'];
-	//echo $cId;
 	
-	$sql= "insert into `users` (name,phoneNo,email,password) values 
-	('$name','$phoneNo','$email','$password')";
+    $name = $sdata[0]['name'];
+	$email = $sdata[0]['email'];
+    $mob = $sdata[0]['mob'];
+    $weight = $sdata[0]['weight'];
+    $height = $sdata[0]['height'];
+    $dob = $sdata[0]['dob'];
+    $bloodGroup = $sdata[0]['bloodGroup'];
+	$password = $sdata[0]['password'];
+	
+	$sql= "insert into `users` (name,email,mob,weight,height,dob,bloodGroup,password) values 
+	('$name','$email','$mob','$weight','$height','$dob','$bloodGroup','$password')";
 
-
-	$result=mysqli_query($conn,$sql);
-
-	echo "update successfull";
+if($conn->query($sql) === TRUE){
+	echo "Successfully updated";
 }
+else{echo "Something is wrong.".$sql."<br>".$conn->error;}
+
 $conn->close();
+
 ?>

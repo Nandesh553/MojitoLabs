@@ -1,0 +1,12 @@
+[
+    {
+        "name": "name3",
+        "email": "email3",
+        "mob": "1113",
+        "weight": "25",
+        "height": "167",
+        "dob": "2017-08-16",
+        "bloodGroup": "a-",
+        "password": "pass3"
+    }   
+]
