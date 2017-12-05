@@ -1,10 +1,9 @@
-<?php include 'dbconnect.php';?>
+<?php include 'dbConnect.php';?>
 
 <?php
    session_start();
    
-      // username and password sent from form 
-      
+      /* username and password sent from form 
       header('Content-type: application/json;');
 	  //read the json file contents
 	  $jsondata = file_get_contents("login.json");	
@@ -18,7 +17,13 @@
 	  $email=$sdata[0]['email'];
 	  $password=$sdata[0]['password'];
       
-      $sql = "SELECT userId,email,mob FROM users WHERE email = '$email' and password = '$password'";
+      $email="nandesh";
+	  $password="nandesh";
+      */
+      $email=$_POST['email'];
+	  $password=$_POST['password'];
+       
+      $sql = "SELECT * FROM users WHERE email = '$email' and password = '$password'";
       $result = mysqli_query($conn,$sql);
       $row = mysqli_fetch_assoc($result);
       
@@ -28,10 +33,12 @@
 		
       if($count == 1) {
          $_SESSION['login_user'] = $email;
-         echo ("User present.");
          //header("location: home.php");
          echo json_encode($row, JSON_PRETTY_PRINT);
-      }else {
-         $error = "Your Login Name or Password is invalid";
       }
+      else {
+         $error = "Your Login Name or Password is invalid.";
+         echo $error;
+      }
+      $conn->close();
 ?>

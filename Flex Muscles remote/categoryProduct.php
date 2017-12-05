@@ -1,9 +1,9 @@
-<?php include 'dbconnect.php';?>
+<?php include 'dbConnect.php';?>
 
 <?php
 	header('Content-type: application/json;');
 //read the json file contents
-    $jsondata = file_get_contents("product.json");	
+    $jsondata = file_get_contents("category.json");	
 //echo $jsondata;
 	
 //storing it into array.
@@ -15,7 +15,7 @@
 $cId= $sdata[0]['categoryId'];
 //echo $cId;
 	
-$sql= "Select * from `product` where `categoryId`='$cId'";	
+$sql= "Select * from `product` where `categoryId`='$cId'";
 
 
 $result=mysqli_query($conn,$sql);

@@ -1,0 +1,20 @@
+[
+    {
+        "productId": "406",
+        "categoryId": "3",
+        "productName": "pname6",
+        "productPrice": "127",
+        "productSize": "82",
+        "productColor": "pcolor6",
+        "productStock": "39"
+    },
+	{
+        "productId": "407",
+        "categoryId": "3",
+        "productName": "pname7",
+        "productPrice": "128",
+        "productSize": "83",
+        "productColor": "pcolor7",
+        "productStock": "40"
+    }
+]

@@ -1,7 +1,7 @@
 <?php
 $servername="localhost";
-$username="root";
-$password="lenovo";
+$username="nandesh";
+$password="check";
 $db="flexdb553";
 $conn = new mysqli($servername, $username, $password,$db);
 if($conn->connect_error){

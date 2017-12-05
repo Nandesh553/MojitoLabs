@@ -1,0 +1,77 @@
+Product info
+
+,
+    {
+        "productId": "402",
+        "categoryId": "1",
+        "productName": "pname2",
+        "productPrice": "124",
+        "productSize": "78",
+        "productColor": "pcolor2",
+        "productStock": "35",
+        "productUpdateDate": "2018-02-13",
+        "productImage": null
+    },
+    {
+        "productId": "403",
+        "categoryId": "2",
+        "productName": "pname3",
+        "productPrice": "124",
+        "productSize": "79",
+        "productColor": "pcolor3",
+        "productStock": "36",
+        "productUpdateDate": "2018-02-14",
+        "productImage": null
+    },
+    {
+        "productId": "404",
+        "categoryId": "1",
+        "productName": "pname4",
+        "productPrice": "125",
+        "productSize": "80",
+        "productColor": "pcolor4",
+        "productStock": "37",
+        "productUpdateDate": "2018-02-15",
+        "productImage": null
+    },
+    {
+        "productId": "405",
+        "categoryId": "1",
+        "productName": "pname5",
+        "productPrice": "126",
+        "productSize": "81",
+        "productColor": "pcolor5",
+        "productStock": "38",
+        "productUpdateDate": "2018-02-16",
+        "productImage": null
+    }
+]
+
+**************Categoty***************
+
+[
+    {
+        "categoryId": "1",
+        "parentId": "101",
+        "categoryName": "Category1",
+        "lastUpdated": "2017-11-12"
+    },
+    {
+        "categoryId": "2",
+        "parentId": "102",
+        "categoryName": "Category2",
+        "lastUpdated": "2018-11-13"
+    },
+    {
+        "categoryId": "3",
+        "parentId": "103",
+        "categoryName": "Category3",
+        "lastUpdated": "2018-11-04"
+    },
+    {
+        "categoryId": "4",
+        "parentId": "104",
+        "categoryName": "Category4",
+        "lastUpdated": "2019-11-09"
+    }
+]

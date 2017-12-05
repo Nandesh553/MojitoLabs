@@ -1,4 +1,4 @@
-<?php include 'dbconnect.php';?>
+<?php include 'dbConnect.php';?>
 
 <?php
 	header('Content-type: application/json;');
